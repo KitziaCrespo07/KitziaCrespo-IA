@@ -1,0 +1,10 @@
+# Archivos compilados de Java
+bin/
+*.class
+
+# Configuracion local del editor
+.vscode/
+
+# Registros de errores de la JVM
+hs_err_pid*.log
+replay_pid*.log
