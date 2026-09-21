@@ -10,10 +10,11 @@
  */
 
 /*
- * Avance del 8-puzzle con las búsquedas no informadas vistas en clase.
+ * Entregable del primer parcial. 8-puzzle con búsquedas no informadas.
  *
- * Programa principal. Ejecuta las tres búsquedas sobre el mismo estado inicial
- * y el mismo estado objetivo, para que sus datos estadísticos sean comparables.
+ * Programa principal. Ejecuta las cinco búsquedas obligatorias y la bidireccional
+ * (opcional) sobre el mismo estado inicial y el mismo estado objetivo, para que
+ * sus datos estadísticos sean comparables.
  */
 public class App {
     public static void main(String[] args) throws Exception {
@@ -33,6 +34,11 @@ public class App {
         searchTree.breadthFirstSearch();
         searchTree.uniformCostSearch();
         searchTree.depthFirstSearch();
+        // Límite de 20 movimientos para la búsqueda en profundidad limitada.
+        searchTree.depthLimitedSearch(20);
+        searchTree.iterativeDeepeningSearch();
+        // Opcional.
+        searchTree.bidirectionalSearch();
 
         System.out.println("End");
     }
