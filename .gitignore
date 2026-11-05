@@ -1,10 +1,15 @@
-# Archivos compilados de Java
-bin/
-*.class
+__pycache__/
+*.pyc
 
-# Configuracion local del editor
-.vscode/
+# Las fotos descargadas de Kaggle no se suben, solo los recortes del dataset
+fotos_famosos_sin_recortar/*
+!fotos_famosos_sin_recortar/.gitkeep
 
-# Registros de errores de la JVM
-hs_err_pid*.log
-replay_pid*.log
+# Carpetas de trabajo que no forman parte de la entrega
+archive/
+archive.zip
+fotos_más_famosos/
+anterior/
+
+# Sesiones de captura que no quedaron en el dataset, se guardan por si acaso
+respaldo_capturas/
