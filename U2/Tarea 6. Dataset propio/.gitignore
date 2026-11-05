@@ -1,0 +1,15 @@
+__pycache__/
+*.pyc
+
+# Las fotos descargadas de Kaggle no se suben, solo los recortes del dataset
+fotos_famosos_sin_recortar/*
+!fotos_famosos_sin_recortar/.gitkeep
+
+# Carpetas de trabajo que no forman parte de la entrega
+archive/
+archive.zip
+fotos_más_famosos/
+anterior/
+
+# Sesiones de captura que no quedaron en el dataset, se guardan por si acaso
+respaldo_capturas/
